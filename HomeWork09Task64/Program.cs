@@ -14,7 +14,7 @@ int ReadData(string line)
     return number;
 }
 
-
+//печать последовательность натуральных чисел от одного и до заданного
 void PrintNumbers(int n)
 {
     if (n == 1)
@@ -28,22 +28,10 @@ void PrintNumbers(int n)
     }
 }
 
-void LineGenRec(int num)
-{   
-    Console.Write(num + " ");
-    if (num == 1)
-    {
-    }
-    else
-    {
-        LineGenRec(num - 1);
-    }
-    
-}
+
 
 int number = ReadData("Введите число N: ");
 PrintNumbers(number);
 Console.WriteLine();
-LineGenRec(number);
-Console.WriteLine();
+
 
