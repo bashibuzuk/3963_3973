@@ -33,5 +33,3 @@ void PrintNumbers(int n)
 int number = ReadData("Введите число N: ");
 PrintNumbers(number);
 Console.WriteLine();
-
-
