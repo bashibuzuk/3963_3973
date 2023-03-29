@@ -42,6 +42,7 @@ int[,] Gen2DArr(int countRow, int countColumn)
             arr[i, countColumn] = count;
             count++;
         }
+        
         countRow-=1; 
 
         //3 движение влево по нижнему краю
@@ -84,6 +85,8 @@ void Print2DArr(int[,] arr)
 
 int row = ReadData("Введите количество строк ");
 int column = ReadData("Введите количество столбцов ");
-int[,] arr2D1 = Gen2DArr(row, column);                     
+DateTime Time2 = DateTime.Now;
+int[,] arr2D1 = Gen2DArr(row, column);  
+Console.WriteLine(DateTime.Now - Time2);                   
 
 Print2DArr(arr2D1);                                        
